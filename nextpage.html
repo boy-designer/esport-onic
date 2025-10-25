@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Onic Esports</title>
+  <link rel="stylesheet" href="next.css">
+  <link rel="icon" type="img/logo onic.jpg" href="img/logo onic.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+  <header>
+    <!-- Background Video -->
+    <video autoplay loop muted playsinline>
+      <source src="onic.mp4" type="video/mp4" />
+      Browser Anda tidak mendukung video.
+    </video>
+
+    <!-- NAVBAR -->
+    <nav>
+      <div class="logo">Onic Esports</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Service</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="logout-container">
+        <button class="logout-btn" id="logoutBtn">Logout</button>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <!-- HEADER CONTENT -->
+    <div class="header-content">
+      <h1>Onic Esports</h1>
+      <p>Onic Esports | Onic Time</p>
+    </div>
+  </header>
+
+
+
+  <section id="home">
+    <!-- Bagian 1 -->
+    <div class="home-container">
+      <div class="home-img">
+        <img src="img/onic id mpl.jpg" alt="Onic ID MPL">
+      </div>
+      <div class="home-text" id="text1">
+        <h2>Onic ID | MPL ID</h2>
+        <p>ONIC Esports adalah tim Mobile Legends Indonesia yang sering juara MPL ID. Dikenal disiplin dan konsisten,
+          ONIC jadi tim dominan di liga profesional MPL Indonesia sejak berdiri tahun 2018.</p>
+      </div>
+      <button class="show-btn" onclick="showText('text1')">Tampilkan Teks</button>
+      <button class="hide-btn" onclick="hideText('text1')">Tutup Teks</button>
+    </div>
+
+    <!-- Bagian 2 -->
+    <div class="home-container reverse">
+      <div class="home-img">
+        <img src="img/onic ph  mpl.jpg" alt="Minuman Segar">
+      </div>
+      <div class="home-text" id="text2">
+        <h2>Onic PH | MPL PH</h2>
+        <p>ONIC PH adalah tim Mobile Legends asal Filipina di bawah organisasi ONIC Esports. Mereka dikenal kuat di MPL
+          Philippines dan pernah menjuarai MPL PH Season 8 serta tampil di M6 World Championship.
+        </p>
+      </div>
+      <button class="show-btn" onclick="showText('text2')">Tampilkan Teks</button>
+      <button class="hide-btn" onclick="hideText('text2')">Tutup Teks</button>
+    </div>
+
+    <!-- Bagian 1 -->
+    <div class="home-container">
+      <div class="home-img">
+        <img src="img/onic olympus.jpg" alt="Onic ID MPL">
+      </div>
+      <div class="home-text" id="text3">
+        <h2>Onic Olympus | Free Fire</h2>
+        <p>ONIC Olympus adalah tim Free Fire Indonesia dari ONIC Esports. Mereka dikenal kuat di turnamen nasional dan
+          internasional, dengan pemain seperti Putraxx, Calvintzy, CrimeMKS, AFM, dan Zack.
+        </p>
+      </div>
+      <button class="show-btn" onclick="showText('text3')">Tampilkan Teks</button>
+      <button class="hide-btn" onclick="hideText('text3')">Tutup Teks</button>
+    </div>
+  </section>
+
+  <section class="card-section">
+    <h1 class="section-title">Onic Esports Squad</h1>
+
+    <div class="card-container">
+
+      <div class="card">
+        <img src="img/onic fighter street.jpg" alt="Onic Player 1" class="card-img">
+        <h2>Onic | Street Fighter</h2>
+        <p class="hidden-text">ONIC Esports memiliki divisi Street Fighter 6 dengan pemain Thailand, Narikun. Ia
+          menjuarai BAM 2025 dan lolos ke Esports World Cup 2025, memperkuat posisi ONIC di scene fighting game
+          internasional.</p>
+        <button class="toggle-btn">Tampilkan Teks</button>
+      </div>
+
+      <div class="card">
+        <img src="img/onic fatal fury.jpg" alt="Onic Player 2" class="card-img">
+        <h2>Onic | Fatal Fury</h2>
+        <p class="hidden-text">ONIC Esports telah membentuk divisi untuk gim pertarungan Fatal Fury: City of The Wolves,
+          dengan merekrut pemain unggulan NYChrisG dari AS untuk menguatkan tim.</p>
+        <button class="toggle-btn">Tampilkan Teks</button>
+      </div>
+
+      <div class="card">
+        <img src="img/onic tekken 8.jpg" alt="Onic Player 3" class="card-img">
+        <h2>Onic | Tekken 8</h2>
+        <p class="hidden-text">ONIC Esports memiliki divisi Tekken 8 dengan pemain seperti Rest, Higem, Strog, dan RTM.
+          Mereka aktif di turnamen internasional dan bersiap menuju Esports World Cup 2025.</p>
+        <button class="toggle-btn">Tampilkan Teks</button>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="onic" id="about">
+    <img src="img/logo onic.jpg" alt="Logo ONIC Esports">
+    <h1>About Onic Esport</h1>
+    <p>
+      **ONIC Esports** adalah organisasi esports asal Indonesia yang berdiri pada tahun 2018. Tim ini dikenal dengan
+      julukan **“Landak Kuning”** dan memiliki reputasi sebagai salah satu organisasi esports terbaik di Asia Tenggara.
+      ONIC memiliki beberapa divisi yang aktif di berbagai game kompetitif, seperti **Mobile Legends: Bang Bang**,
+      **Free Fire**, **Call of Duty: Mobile**, dan **Street Fighter 6**. Selain itu, ONIC juga memiliki tim wanita
+      bernama **ONIC Pertiwi**. Dengan identitas kuat, profesionalisme tinggi, dan prestasi gemilang di berbagai
+      turnamen, ONIC Esports terus menjadi simbol kebanggaan Indonesia dalam dunia esports internasional.
+
+    </p>
+  </div>
+
+  <!-- Bagian CONTACT -->
+  <div class="contact">
+    <h2>Contact Us</h2>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/onic.esports/" target="_blank" title="Instagram"><i
+          class="fab fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@onic.esports" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+      <a href="https://www.youtube.com/@onicesports" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+    </div>
+  </div>
+
+</body>
+<script src="next.js"></script>
+
+</html>

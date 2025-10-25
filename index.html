@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Onic Esports</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="img/logo onic.jpg" href="img/logo onic.jpg">
+  <script>
+    function goNext() {
+      const loggedIn = sessionStorage.getItem("loggedIn");
+      const alertBox = document.getElementById("alert");
+
+      if (loggedIn === "true") {
+        window.location.href = "home.php";
+      } else {
+        alertBox.classList.add("show");
+        setTimeout(() => alertBox.classList.remove("show"), 3000);
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class="animated-bg"></div>
+
+  <div class="main-container">
+    <div class="content-box">
+      <img src="img/logo onic.jpg" alt="Logo" class="logo">
+      <h1 class="title">Welcome to Onic Esport</h1>
+      <p class="subtitle">Base Onic Esport Explore</p>
+
+      <button class="btn-next" onclick="goNext()">Next →</button>
+
+      <div class="auth-btns">
+        <a href="signin.php" class="btn">Sign In</a>
+        <a href="signup.php" class="btn btn-alt">Sign Up</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="alert" class="custom-alert">⚠️ Silakan login terlebih dahulu!</div>
+</body>
+
+</html>
